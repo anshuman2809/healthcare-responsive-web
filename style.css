@@ -1,0 +1,135 @@
+@import url("https://fonts.cdnfonts.com/css/mulish");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Mulish", sans-serif;
+}
+
+/* Section One */
+.header-navbar {
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+nav {
+  width: 30%;
+  color: #1f1534;
+}
+
+header {
+  width: 36%;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+nav li {
+  opacity: 0.5;
+}
+
+.navbar-home {
+  opacity: 1;
+}
+
+.section-one {
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-image: url("/assets/dot-element.svg");
+  background-position: top left;
+  background-repeat: no-repeat;
+}
+
+.sub-section-one {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  width: 25%;
+}
+
+.sub-section-one h1 {
+  font-size: 48px;
+  font-weight: 600;
+  margin-bottom: 5%;
+}
+
+.sub-section-one p {
+  color: #7d7987;
+  font-size: 20px;
+  font-weight: 200;
+  margin-bottom: 10%;
+}
+
+.sub-section-one button {
+  border-radius: 55px;
+  border-style: none;
+  background: #458ff6;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 200;
+  padding: 3% 8%;
+}
+
+.sub-section-two {
+  width: 40%;
+}
+
+/* Section Two */
+
+@media screen and (max-width: 768px) {
+  .header-navbar {
+    padding-top: 10px;
+    flex-direction: column;
+    height: auto;
+  }
+  nav ul {
+    display: none;
+  }
+
+  .section-one {
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    background-image: none;
+  }
+  .sub-section-one,
+  .sub-section-two,
+  .sub-section-two img {
+    width: 90%;
+  }
+
+  .sub-section-one h1 {
+    font-size: 52px;
+    font-weight: 600;
+    margin-bottom: 5%;
+  }
+
+  .sub-section-one p {
+    font-size: 20px;
+    font-weight: 200;
+    margin-bottom: 10%;
+  }
+
+  .sub-section-one button {
+    font-size: 16px;
+    font-weight: 200;
+    padding: 3% 15%;
+    margin-bottom: 5%;
+  }
+
+  @media (orientation: landscape) {
+    /* Additional styles for landscape orientation */
+  }
+}
