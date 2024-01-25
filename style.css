@@ -68,7 +68,7 @@ nav li {
 
 .sub-section-one p {
   color: #7d7987;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 200;
   margin-bottom: 10%;
 }
@@ -88,6 +88,85 @@ nav li {
 }
 
 /* Section Two */
+.section-two {
+  height: 100vh;
+  width: 100%;
+  background-image: url("/assets/freeform-vector.svg");
+  background-position: top left;
+  background-repeat: no-repeat;
+}
+
+.section-two h1 {
+  margin-top: 4%;
+  font-size: 34px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.section-two .rectangle {
+  display: block;
+  margin: 1% auto;
+}
+
+.section-two .description {
+  width: 45%;
+  text-align: center;
+  margin: 1.2% auto;
+  font-size: 15px;
+  font-weight: 100;
+  color: #7d7987;
+}
+
+.service-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-container {
+  display: flex;
+  margin: 0.5%;
+}
+
+.card {
+  width: 300px;
+  height: 300px;
+  margin: 0% 1%;
+  padding: 2% 2%;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 10px 40px 50px 0px rgba(229, 233, 246, 0.4);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: start;
+}
+
+.card img {
+  height: 90px;
+}
+
+.card h4 {
+  font-size: 18px;
+}
+
+.card p {
+  color: #7d7987;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 28px;
+}
+
+.section-two button {
+  display: block;
+  margin: 0.5% auto;
+  color: #458ff6;
+  font-size: 16px;
+  background-color: #fff;
+  border: #458ff6 solid 2px;
+  border-radius: 55px;
+  padding: 0.5% 2%;
+}
 
 @media screen and (max-width: 768px) {
   .header-navbar {
@@ -103,6 +182,7 @@ nav li {
     flex-direction: column-reverse;
     justify-content: space-around;
     background-image: none;
+    margin-top: 1.5%;
   }
   .sub-section-one,
   .sub-section-two,
