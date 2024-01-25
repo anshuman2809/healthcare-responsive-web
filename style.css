@@ -91,13 +91,14 @@ nav li {
 .section-two {
   height: 100vh;
   width: 100%;
+  margin-top: 5%;
+  margin-bottom: 2%;
   background-image: url("/assets/freeform-vector.svg");
   background-position: top left;
   background-repeat: no-repeat;
 }
 
 .section-two h1 {
-  margin-top: 4%;
   font-size: 34px;
   font-weight: 400;
   text-align: center;
@@ -130,7 +131,7 @@ nav li {
 
 .card {
   width: 300px;
-  height: 300px;
+  height: 250px;
   margin: 0% 1%;
   padding: 2% 2%;
   border-radius: 20px;
