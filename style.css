@@ -91,8 +91,7 @@ nav li {
 .section-two {
   height: 100vh;
   width: 100%;
-  margin-top: 5%;
-  margin-bottom: 2%;
+  margin: 5% 0;
   background-image: url("/assets/freeform-vector.svg");
   background-position: top left;
   background-repeat: no-repeat;
@@ -160,7 +159,7 @@ nav li {
 
 .section-two button {
   display: block;
-  margin: 0.5% auto;
+  margin: 2% auto;
   color: #458ff6;
   font-size: 16px;
   background-color: #fff;
@@ -169,6 +168,67 @@ nav li {
   padding: 0.5% 2%;
 }
 
+/* Footer */
+footer {
+  height: 30vh;
+  background: linear-gradient(183deg, #67c3f3 -8.57%, #5a98f2 82.96%);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+footer .footer-left {
+  width: 30%;
+}
+
+footer .footer-right {
+  width: 50%;
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+}
+
+footer .logo {
+  position: relative;
+}
+
+footer .logo img {
+  height: 20px;
+}
+
+footer .text {
+  color: #fff;
+  font-size: 20px;
+  padding-left: 5%;
+}
+
+footer .overlay-text {
+  color: #458ff6;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+footer .logo-container {
+  display: flex;
+  align-items: center;
+}
+
+footer p {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 200;
+}
+
+footer li {
+  list-style: none;
+  color: #fff;
+  font-weight: lighter;
+  font-size: 15px;
+  padding: 5% 0%;
+}
 @media screen and (max-width: 768px) {
   .header-navbar {
     padding-top: 10px;
@@ -250,6 +310,14 @@ nav li {
     border: #458ff6 solid 1.5px;
     border-radius: 35px;
     padding: 1% 2%;
+  }
+
+  footer {
+    height: 30vh;
+  }
+  footer p,
+  footer li {
+    font-size: 12px;
   }
 
   @media (orientation: landscape) {
